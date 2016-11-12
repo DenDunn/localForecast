@@ -23,7 +23,7 @@
 $(document).ready(function(){
     function getMyLocation () {
         if (navigator.geolocation){
-            // call getCurrentPosition() 
+            // call getCurrentPosition() and send returned data to callback function viewOnPage
             navigator.geolocation.getCurrentPosition(viewOnPage);
         } else {
             $("#show").html("'navigator.geolocation' does not supported.");
@@ -35,4 +35,6 @@ $(document).ready(function(){
     }
 
     getMyLocation();
+
+    var icon_map = 
 })
